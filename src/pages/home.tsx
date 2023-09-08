@@ -9,6 +9,10 @@ export const Home = () => {
             <Link to={"/components"}>
                 <button>Get Started</button>
             </Link>
-        </section>
+            <Link to="https://github.com/bilal-23/CSS-Library" target="_blank"
+                rel="noopener noreferrer">
+                <button>GitHub Repo</button>
+            </Link>
+        </section >
     )
 }
