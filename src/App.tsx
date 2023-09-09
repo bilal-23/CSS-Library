@@ -5,7 +5,9 @@ import Sidebar from './components/sidebar/sidebar'
 import { Home } from './pages/home'
 import NotFound from './pages/404'
 import Components from './pages/components'
-import { componentsData } from './components'
+import AvatarDoc from './documentation/avatar-doc'
+import AlertDoc from './documentation/alert-doc'
+import BadgeDoc from './documentation/badge-doc'
 
 
 function App() {
@@ -17,10 +19,12 @@ function App() {
       <Nav />
       <main className="container" style={{ display: !showSidebar ? "flex" : "grid" }}>
         {showSidebar && <Sidebar />}
-        <ComponentRoutes />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/components" element={<Components />} />
+          <Route path="/avatar" element={<AvatarDoc />} />
+          <Route path="/alert" element={<AlertDoc />} />
+          <Route path="/badge" element={<BadgeDoc />} />
           {/* Add 404 page */}
           <Route path="*" element={<NotFound />} />
         </Routes>
@@ -30,18 +34,3 @@ function App() {
 }
 
 export default App;
-
-
-const ComponentRoutes = () => {
-  return (
-    <Routes>
-      {
-        componentsData.map((link, index) => {
-          return (
-            <Route key={index} path={link.path} element={<link.component />} />
-          )
-        })
-      }
-    </Routes>
-  )
-}

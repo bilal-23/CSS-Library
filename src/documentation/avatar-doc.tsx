@@ -1,16 +1,6 @@
 import styles from "./doc.module.css";
 import Avatar from "../components/avatar/avatar";
-// Using ES6 import syntax
-import hljs from 'highlight.js/lib/core';
-import javascript from 'highlight.js/lib/languages/javascript';
 
-// Then register the languages you need
-hljs.registerLanguage('javascript', javascript);
-
-const avatarSmall = hljs.highlight(
-    '<Avatar src="https://avatars.githubusercontent.com/u/25126281?v=4" alt="avatar" size="small" />',
-    { language: 'javascript' }
-).value;
 
 const AvatarDoc = () => {
     return (
