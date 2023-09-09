@@ -1,46 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from "./sidebar.module.css";
-
-const compLinks = [
-    {
-        path: "/avatar",
-        name: "Avatar"
-    },
-    {
-        path: "/alert",
-        name: "Alert"
-    },
-    {
-        path: "/badge",
-        name: "Badge"
-    },
-    {
-        path: "/button",
-        name: "Button"
-    },
-    {
-        path: "/card",
-        name: "Card"
-    },
-    {
-        path: "/heading",
-        name: "Heading"
-    },
-    {
-        path: "/text",
-        name: "Text"
-    },
-    {
-        path: "image",
-        name: "Image"
-    }
-]
+import { componentsData } from "../../components";
 
 const Sidebar = () => {
     return (
         <ul className={styles["list"]}>
             {
-                compLinks.map((link, index) => {
+                componentsData.map((link, index) => {
                     return (
                         <li key={index} className={styles["list-item"]}>
                             <Link to={link.path} className={styles["list-item-link"]}>

@@ -1,0 +1,28 @@
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.avatar-small {
+  width: 3rem;
+  height: 3rem;
+}
+.avatar-medium {
+  width: 5rem;
+  height: 5rem;
+}
+.avatar-large {
+  width: 10rem;
+  height: 10rem;
+}

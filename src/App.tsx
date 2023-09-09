@@ -5,6 +5,8 @@ import Sidebar from './components/sidebar/sidebar'
 import { Home } from './pages/home'
 import NotFound from './pages/404'
 import Components from './pages/components'
+import { componentsData } from './components'
+
 
 function App() {
   const location = useLocation()
@@ -15,6 +17,7 @@ function App() {
       <Nav />
       <main className="container" style={{ display: !showSidebar ? "flex" : "grid" }}>
         {showSidebar && <Sidebar />}
+        <ComponentRoutes />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/components" element={<Components />} />
@@ -26,4 +29,19 @@ function App() {
   )
 }
 
-export default App
+export default App;
+
+
+const ComponentRoutes = () => {
+  return (
+    <Routes>
+      {
+        componentsData.map((link, index) => {
+          return (
+            <Route key={index} path={link.path} element={<link.component />} />
+          )
+        })
+      }
+    </Routes>
+  )
+}
