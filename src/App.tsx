@@ -9,6 +9,7 @@ import AvatarDoc from './documentation/avatar-doc'
 import AlertDoc from './documentation/alert-doc'
 import BadgeDoc from './documentation/badge-doc'
 import ButtonDoc from './documentation/button-doc'
+import CardDoc from './documentation/card-doc'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/alert" element={<AlertDoc />} />
           <Route path="/badge" element={<BadgeDoc />} />
           <Route path="/button" element={<ButtonDoc />} />
+          <Route path="/card" element={<CardDoc />} />
           {/* Add 404 page */}
           <Route path="*" element={<NotFound />} />
         </Routes>
