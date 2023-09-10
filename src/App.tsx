@@ -10,6 +10,8 @@ import AlertDoc from './documentation/alert-doc'
 import BadgeDoc from './documentation/badge-doc'
 import ButtonDoc from './documentation/button-doc'
 import CardDoc from './documentation/card-doc'
+import HeadingDoc from './documentation/heading-doc'
+import TextDoc from './documentation/text-doc'
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
           <Route path="/badge" element={<BadgeDoc />} />
           <Route path="/button" element={<ButtonDoc />} />
           <Route path="/card" element={<CardDoc />} />
+          <Route path="/heading" element={<HeadingDoc />} />
+          <Route path="/text" element={<TextDoc />} />
           {/* Add 404 page */}
           <Route path="*" element={<NotFound />} />
         </Routes>
