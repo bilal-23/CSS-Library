@@ -17,7 +17,7 @@ const TextDoc = () => {
                 <Text size="4xl">4XL Text</Text>
             </div>
             <div className={styles["use"]}>
-                How to use Heading component?
+                How to use Text component?
                 <div className={styles["code-component"]}>
                     <p>{`<Text size="xs">XS Text</Text>`}</p>
                     <p>{`<Text size="sm">SM Text</Text>`}</p>

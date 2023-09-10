@@ -1,0 +1,20 @@
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.small {
+  width: 50px;
+  height: 50px;
+}
+.large {
+  width: 100px;
+  height: 100px;
+}
+.medium {
+  width: 75px;
+  height: 75px;
+}
+.round {
+  border-radius: 50%;
+}

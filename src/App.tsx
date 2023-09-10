@@ -12,6 +12,7 @@ import ButtonDoc from './documentation/button-doc'
 import CardDoc from './documentation/card-doc'
 import HeadingDoc from './documentation/heading-doc'
 import TextDoc from './documentation/text-doc'
+import ImageDoc from './documentation/image-doc'
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/card" element={<CardDoc />} />
           <Route path="/heading" element={<HeadingDoc />} />
           <Route path="/text" element={<TextDoc />} />
+          <Route path="/image" element={<ImageDoc />} />
           {/* Add 404 page */}
           <Route path="*" element={<NotFound />} />
         </Routes>
