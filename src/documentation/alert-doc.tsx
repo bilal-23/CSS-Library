@@ -15,7 +15,7 @@ const AlertDoc = () => {
                 <Alert type='warning'>Warning</Alert>
             </div>
             <p className={styles["use"]}>
-                How to use avatar component?
+                How to use alert component?
                 <div className={styles["code-component"]}>
                     <p>{"<Alert type='error'>Error</Alert>"}</p>
                     <p>{"<Alert type='info'>Info</Alert>"}</p>

@@ -8,6 +8,7 @@ import Components from './pages/components'
 import AvatarDoc from './documentation/avatar-doc'
 import AlertDoc from './documentation/alert-doc'
 import BadgeDoc from './documentation/badge-doc'
+import ButtonDoc from './documentation/button-doc'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/avatar" element={<AvatarDoc />} />
           <Route path="/alert" element={<AlertDoc />} />
           <Route path="/badge" element={<BadgeDoc />} />
+          <Route path="/button" element={<ButtonDoc />} />
           {/* Add 404 page */}
           <Route path="*" element={<NotFound />} />
         </Routes>

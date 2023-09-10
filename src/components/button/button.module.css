@@ -1,0 +1,47 @@
+.button {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+.button-primary {
+  background-color: #000;
+  color: #fff;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+.button-outline {
+  background-color: transparent;
+  color: #000;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.button-search,
+.button-edit,
+.button-create,
+.button-delete {
+  background-color: #999;
+  color: #fff;
+}
+.floating-btn {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
